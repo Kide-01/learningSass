@@ -6,13 +6,14 @@ $tbody-even-bg:$white;
 $tbody-hover-bg:darken($light-gray, 15%);
 
 .course-section{
-    padding: 50px 0;
-
+    //  padding: 50px 0;
+    @include stayleSection(30px, 30px, transparent);  // transparent da nasledi od backgrounda
+    
     table{
         border: $table-border;
         border-collapse: collapse;
         width: 100%;
-        
+
         caption{
             text-align: left;
             font-style: italic;

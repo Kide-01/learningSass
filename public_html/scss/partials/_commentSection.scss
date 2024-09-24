@@ -1,5 +1,14 @@
 $comment-bg:$white;
 .comment-section{
-    padding: 30px 0;
-    background-color:$comment-bg;
-}
+   // padding: 30px 0;
+   // background-color:$comment-bg;
+    
+     @include stayleSection(30px, 30px, $comment-bg);
+    
+    .comment-img{
+        img{
+            @include radius(50%);
+        }
+    }
+    
+}//section end

@@ -12,7 +12,8 @@ $btn-dark:$black;
     display: inline-block;
     padding: 5px 25px;
     border: none;
-    border-radius: 5px;
+   // @include radius(5px);
+   @include customRadius(5px,0%,5px,0%)
     cursor: pointer;
 }
 .btn-default{
